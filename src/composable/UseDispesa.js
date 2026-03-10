@@ -10,6 +10,7 @@ const title = ref('');
 const value = ref('');
 const category = ref('');
 const filter = ref('all');
+const visivel = ref(false)
 
 export function useDispesa() {
 
@@ -49,6 +50,10 @@ function clearAll() {
     expenses.value = [];
 }
 
+function mostarComponent() {
+    visivel.value = !visivel.value
+}
+
 return {
  expenses,
  title,
@@ -59,6 +64,8 @@ return {
  total,
  addExpense,
  removeExpense,
- clearAll
+ clearAll,
+ mostarComponent,
+ visivel
 }
 }
