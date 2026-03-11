@@ -27,24 +27,25 @@ body {
   font-size: 23px;
   color: #E9E9E9;
   background-color: #008584;
-  padding: 13px;
+  padding: 16px 13px ;
 }
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   gap: 18px;
   margin-top: 18px;
-}
+}   
 
-.panel {
+.panel-lista {
   background: #fff;
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 0 25px ;
   text-align: center;
   align-items: center;
-  margin: 10px 35px;
-
+  max-width: 600px;
+  width: 100%;
+  justify-self: center;
 }
 
 .panel h2 {
@@ -68,7 +69,7 @@ body {
 .class{
   display: flex;
   justify-content: space-around;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 .class-btn {
   font-size: 15px;
@@ -107,7 +108,7 @@ body {
   border-collapse: collapse;
   text-align: left;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .table thead{
@@ -117,7 +118,7 @@ body {
 
 .table th,
 .table td{
-  padding: 8px;
+  padding: 10px;
 }
 
 .table td{
@@ -142,22 +143,110 @@ body {
   border-radius: 4px;
 }
 
+.summary .small-btn{
+      font-size: 15px;
+}
 .summary{
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 14px;
+  align-items: center;
 }
 
 footer{
-padding: 20px;
-display: flex;
-justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  background: #f5f5f5;display: flex;
+  justify-content: center;
 }
 
 .add-principal{
-    background-color: #006666;
-    color: #E9E9E9;
-    border: none;
+  background-color: #006666;
+  color: #E9E9E9;
+  border: none;
+
+  font-size: 18px;
+  padding: 16px 25px;
+  border-radius: 8px;
+
+  width: 90%;
+  max-width: 500px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.add-principal:active{
+  transform: scale(0.97);
+    background-color: #004444;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.panel-add{
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.panel-add h2{
+  margin-bottom: 18px;
+  font-size: 20px;
+  text-align: center;
+  color: #006666;
+}
+
+.panel-add .input{
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+
+  font-size: 16px;
+
+  border-radius: 6px;
+  border: 1px solid #ccc;
+
+  outline: none;
+}
+
+.panel-add .input:focus{
+  border-color: #006666;
+}
+
+.panel-add .row{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.panel-add .small-btn{
+  width: 100%;
+  padding: 14px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  background: #006666;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.panel-add .small-btn:active{
+  transform: scale(0.96);
+  background: #004444;
 }

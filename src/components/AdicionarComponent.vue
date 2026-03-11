@@ -2,6 +2,7 @@
 import { useDispesa } from '../composable/UseDispesa';
 
 const { title, value, category, addExpense,} = useDispesa()
+
 </script>
 
 <template>

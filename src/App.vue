@@ -5,11 +5,11 @@
         </header>
 
         <div class="layout">
-            <div class="panel" v-if="visivel">
+            <div class="panel-add" v-if="visivel">
                 <AdicionarComponent />
             </div>
 
-            <div class="panel" v-else>
+            <div class="panel-lista" v-else>
                 <TabelaComponent />
             </div>
         </div>
